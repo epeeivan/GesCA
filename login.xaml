@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gesca.NewPage1"
+             Title="Login">
+    <Grid Margin="20" >
+        <Grid.RowDefinitions >
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="300" />
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <VerticalStackLayout   Grid.Column="0" Grid.Row="0">
+            <Label Text="Welcome to" FontSize="Large" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+            <Label Text="GesCA" FontSize="40" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#212E53"/>
+            <HorizontalStackLayout></HorizontalStackLayout>
+            <Label Text="the best application for  a good store managment" TextColor="gray" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout  Grid.Column="0" Grid.Row="1">
+            <Label  Margin="0,10"
+           Text="login" TextTransform="Uppercase"/>
+            <VerticalStackLayout Padding="10" Background="#efefef">
+                <Entry Placeholder="Enter your login" FontSize="Medium" Background="#efefef" ClearButtonVisibility="WhileEditing"/>
+            </VerticalStackLayout>
+            <Label 
+           Text="password" TextTransform="Uppercase" Margin="0,10"/>
+            <VerticalStackLayout Padding="10" Background="#efefef">
+                <Entry Placeholder="Enter your password" FontSize="Medium" IsPassword="True" Background="#efefef"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout  Grid.Column="0" Grid.Row="3" HorizontalOptions="FillAndExpand">
+            <Button Text="connect" FontSize="Medium" HorizontalOptions="FillAndExpand" BackgroundColor="#212E53"/>
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>
